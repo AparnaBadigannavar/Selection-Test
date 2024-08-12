@@ -1,7 +1,5 @@
 import React from 'react';
 import './Mainpage.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import imgmenu from '../images/menu.jpg';
 
 import images from '../images/work.png';
@@ -37,7 +35,7 @@ const Mainpage = () => {
             </section>
             <section id="logodes"><pre>   Begin your own kind of logo creation for</pre><pre>        professional,best and quaint</pre> </section>
             <section id="logodes2">Launch your brand with expertly crafted business cards, eye-catching social media graphics, distinctive app icons, professional letterheads, and more.</section>
-            <button class="custom-button">Create my logo</button>
+            <button className="custom-button">Create my logo</button>
             </div> 
             </div>  
 
@@ -140,13 +138,13 @@ const Mainpage = () => {
     </div>
     </div>
     
-    <button class="button2">See example assets</button>
+    <button className="button2">See example assets</button>
 
 
-    <div class="box4">
-      <div class="sidebox">
-        <div class="sidebox-title">The only logo maker with free customization</div>
-        <div class="sidebox-note">We’ll personally help you customize your logo with the purchase of any package.</div>
+    <div className="box4">
+      <div className="sidebox">
+        <div className="sidebox-title">The only logo maker with free customization</div>
+        <div className="sidebox-note">We’ll personally help you customize your logo with the purchase of any package.</div>
       </div>
       </div>
       
