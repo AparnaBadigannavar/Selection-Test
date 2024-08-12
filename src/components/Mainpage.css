@@ -93,26 +93,22 @@ height: 40px;
     background-color: antiquewhite;
     z-index: 1;
 }
-/* .logoitems{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
 .logos__list {
-    display: flex; /* Align items in a row */
+    display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; /* Allow wrapping to the next line */
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0; 
+    margin: 0;
   }
   
   .logos__item {
-    margin: 20px; /* Add space between logos */
+    margin: 20px; 
   }
   
   .logos__img {
-    display: block; /* Remove space below the image */
+    display: block;
   }
 #create{
   width: 400px;
@@ -163,6 +159,18 @@ background-color: rgb(247, 244, 244);
     width: 290px;
 }
 
+.boximg1{
+  height: 300px;
+  width: 300px;
+}
+
+.boximg2{
+  height: 100px;
+  width: 100px;
+}
+
+
+
 #box3{
     height: 150px;
     position: relative;
@@ -200,7 +208,7 @@ background-color: rgb(247, 244, 244);
     top: -450px;
   }
  
-  .chat__phone {
+  .mblpage {
     width: 453px;
     height: 466px;
     padding: 120px 55px 0;
@@ -214,24 +222,24 @@ background-color: rgb(247, 244, 244);
     
   }
 
-  .chat__list-item-userpic {
+  .mblpagelistitem-userpic {
     width: 43px;
     height: 43px
   }
 
-  .chat__list-item-note {
+  .mblpagelistitem-note {
     padding: 14px 24px
   }
 
-  .chat__list-item--s2 .chat__list-item-note {
+  .mblpagelistitem--s2 .mblpagelistitem-note {
     background-color: #efefef
   }
 
-  .chat__main-title{    font-family: cursive;
+  .sidebox-title{    font-family: cursive;
     font-size: larger;
     font-weight: 800;}
 
-    .chat__main-note{
+    .sidebox-note{
       color: grey;
     }
 

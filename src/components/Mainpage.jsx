@@ -8,11 +8,11 @@ import images from '../images/work.png';
 import wrkimages from '../images/work2.png';
 import wrkimages3 from '../images/work3.png';
        
-import logo1 from '../images/logo1.png';
-import logo2 from '../images/logo2.png';
-import logo3 from '../images/logo3.png';
-import logo4 from '../images/logo4.png';
-import logo5 from '../images/logo5.png';
+import mark1 from '../images/mark1.png';
+import mark2 from '../images/mark2.png';
+import mark3 from '../images/mark3.png';
+import mark4 from '../images/mark4.png';
+import mark5 from '../images/mark5.png';
 
 import paper from '../images/paper.jpg';
 import planet from '../images/planet.png';
@@ -39,7 +39,15 @@ const Mainpage = () => {
             <section id="logodes2">Launch your brand with expertly crafted business cards, eye-catching social media graphics, distinctive app icons, professional letterheads, and more.</section>
             <button class="custom-button">Create my logo</button>
             </div> 
-            </div>               
+            </div>  
+
+            <div className='proj2'>
+              <div >
+                <div>
+
+                </div>
+              </div>
+              </div>             
    
      
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
@@ -69,19 +77,19 @@ const Mainpage = () => {
         <tbody>
           <tr>
             <td>
-              <img src={logo1} style={{ width: '7.063em' }} alt="Logo 1" className="logos__img" />
+              <img src={mark1} style={{ width: '7.063em' }} alt="Logo 1" className="logos__img" />
             </td>
             <td>
-              <img src={logo2} style={{ width: '4.625em' }} alt="Logo 2" className="logos__img" />
+              <img src={mark2} style={{ width: '4.625em' }} alt="Logo 2" className="logos__img" />
             </td>
             <td>
-              <img src={logo3} style={{ width: '4.875em' }} alt="Logo 3" className="logos__img" />
+              <img src={mark3} style={{ width: '4.875em' }} alt="Logo 3" className="logos__img" />
             </td>
             <td>
-              <img src={logo4} style={{ width: '7.563em' }} alt="Logo 4" className="logos__img" />
+              <img src={mark4} style={{ width: '7.563em' }} alt="Logo 4" className="logos__img" />
             </td>
             <td>
-              <img src={logo5} style={{ width: '9.063em' }} alt="Logo 5" className="logos__img" />
+              <img src={mark5} style={{ width: '7.063em' }} alt="Logo 5" className="logos__img" />
             </td>
           </tr>
         </tbody>
@@ -99,9 +107,7 @@ const Mainpage = () => {
               <div id="create2"> Launch your business with a wealth of pre-designed assets at your fingertips.</div>
 
 
-            {/* <pre><h1>create a beautiful logo ,</h1></pre>
-                <pre><h1>start to work on it</h1></pre>
-                <p>"Launch your business with a wealth of pre-designed assets at your fingertips." </p> */}
+           
                 <section className="list">
       <ul>
         <li>Custom Logo Designs</li>
@@ -120,14 +126,16 @@ const Mainpage = () => {
     
 
     <div>
+
         <section id="box2">
-            <img src={paper} alt="oi" />
+
+            <img src={paper} className='boximg1' alt="oi" />
         </section>
     </div>
     
     <div>
         <section id="box3">
-            <img src={planet} alt="op" />
+            <img src={planet} className='boximg2' alt="op" />
         </section>
     </div>
     </div>
@@ -136,33 +144,33 @@ const Mainpage = () => {
 
 
     <div class="box4">
-      <div class="chat__main">
-        <div class="chat__main-title">The only logo maker with free customization</div>
-        <div class="chat__main-note">We’ll personally help you customize your logo with the purchase of any package.</div>
+      <div class="sidebox">
+        <div class="sidebox-title">The only logo maker with free customization</div>
+        <div class="sidebox-note">We’ll personally help you customize your logo with the purchase of any package.</div>
       </div>
       </div>
       
 
-      <div className="chat__phone">
-      <div className="chat__list">
+      <div className="mblpage">
+      <div className="mblpagelist">
 
-        <div className="chat__list-item chat__list-item--s1">
+        <div className="mblpagelistitem mblpagelistitemp1">
           
             <h3>client</h3>
             
          
-          <div className="chat__list-item-note">
+          <div className="mblpagelistitem-note">
           "Please place the icon inside a hexagonal container, change the text color to green, and remove the tagline.          </div>
         </div>
 
-        <div className="chat__list-item chat__list-item--s2">
+        <div className="mblpagelistitemmblpagelistitemp2">
          
             <h3>Ram</h3>
            
-          <div className="chat__list-item-note">
-            <div className="chat__list-item-extra">
+          <div className="mblpagelistitem-note">
+            <div className="mblpagelistitem-extra">
               
-              <div className="chat__list-item-txt">
+              <div className="mblpagelistitem-txt">
                 Sure thing, yes i will change.
               </div>
             </div>
