@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import WeatherWidget from "./components/weather";
 
 function App() {
   return (
@@ -18,6 +20,32 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}
+
+
+
+
+
+function App() {
+  const[inputValue,setInputValue]=useState('Bengaluru')
+  const[location,setLocation]=useState('Bengaluru')
+
+  const handleFormSubmit = (e) =>   {
+    e.preventDefault()
+    setLocation(inputValue)
+
+  }
+
+  return (
+    <div >
+         <form onSubmit={handleFormSubmit}>
+          <input type="text" value={inputValue}  onChange={(e)=>{setInputValue(e.target.value)}}/>
+<button type="submit">Update Location</button>
+         </form>
+      
+      <WeatherWidget location={location}/>
     </div>
   );
 }

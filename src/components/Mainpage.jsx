@@ -16,18 +16,39 @@ import paper from '../images/paper.jpg';
 import planet from '../images/planet.png';
 import settings2 from "../images/logocreator01.png";
 
+import Weather from '../weather/index'
+import { useState } from "react";
 
 
 
 
 
 const Mainpage = () => {
+  const[inputValue,setInputValue]=useState('Bengaluru')
+  const[location,setLocation]=useState('Bengaluru')
+
+  const handleFormSubmit = (e) =>   {
+    e.preventDefault()
+    setLocation(inputValue)
+
+  }
+
   return (
     <div>
+       
     <div className="comp-page" >
+    <div >
+         <form onSubmit={handleFormSubmit}>
+          <input type="text" value={inputValue}  onChange={(e)=>{setInputValue(e.target.value)}}/>
+<button type="submit">Update Location</button>
+         </form>
+      
+      <Weather location={location}/>
+    </div>
+     
         <div className='centername'>
         <div id='menu'>
-              <img src={imgmenu} alt="hi" />
+              <img src={imgmenu} alt="hi" className='three'/>
             </div>
             <section id="logo">
             <span className="trademark">TRADEMARK</span> <span className="creator">CREATOR</span>
@@ -48,24 +69,24 @@ const Mainpage = () => {
               </div>             
    
      
-            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-            <div className="carousel-inner">
-              <div className="carousel-itemactive">
+            <div id="cc" className="ccs" data-ride="c">
+            <div className="c-inner">
+              <div className="ccpiter">
                 <img className="abc" src={images} alt="First slide" />
               </div>
-              <div className="carousel-item">
+              <div className="c-item">
                 <img className="" src={wrkimages} alt="Second slide" />
               </div>
-              <div className="carousel-item">
+              <div className="c-item">
                 <img className="" src={wrkimages3}alt="Third slide" />
               </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <a className="c-control-prev" href="#cc" role="button" data-slide="prev">
+              <span className="ccpi" aria-hidden="true"></span>
               <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <a className="ccn" href="#cc" role="button" data-slide="next">
+              <span className="cci" aria-hidden="true"></span>
               <span className="sr-only">Next</span>
             </a>
           </div>
@@ -183,28 +204,28 @@ const Mainpage = () => {
         </div>
       </div>
 
-      <div className="instantly">
-      <div className="instantly__box">
-        <div className="instantly__main">
-          <div className="instantly__title">Think it,Customize it,and Use it.  </div>
-          <div className="instantly__note">Right in your browser, no designer or software needed</div>
+      <div className="inst">
+      <div className="instb">
+        <div className="instm">
+          <div className="instt">Think it,Customize it,and Use it.  </div>
+          <div className="inst__note">Right in your browser, no designer or software needed</div>
         </div>
-        <div className="instantly__preview">
-          <div className="instantly__preview-box">
-            <img src={settings2} alt="img" className="instantly__preview-img" />
+        <div className="instv">
+          <div className="instv-box">
+            <img src={settings2} alt="img" className="instv-img" />
           </div>
-          <div className="instantly__preview-note">
-            <div className="instantly__preview-info instantly__preview-info--s1">
-              <div className="instantly__preview-title">Get the logo in any kind format</div>
-              <div className="instantly__preview-text">Including SVG, EPS, PNG, and PDF</div>
+          <div className="instv-note">
+            <div className="inst1">
+              <div className="instv-title">Get the logo in any kind format</div>
+              <div className="instv-text">Including SVG, EPS, PNG, and PDF</div>
             </div>
-            <div className="instantly__preview-info instantly__preview-info--s2">
-              <div className="instantly__preview-title">Adjust text and image size</div>
-              <div className="instantly__preview-text">Perfectly sized for web and print</div>
+            <div className="inst2">
+              <div className="instv-title">Adjust text and image size</div>
+              <div className="instv-text">Perfectly sized for web and print</div>
             </div>
-            <div className="instantly__preview-info_instantly__preview-info--s3">
-              <div className="instantly__preview-title">Easily edit and customize</div>
-              <div className="instantly__preview-text">Double click to edit text</div>
+            <div className="inst3">
+              <div className="instv-title">Easily edit and customize</div>
+              <div className="instv-text">Double click to edit text</div>
             </div>
           </div>
         </div>
