@@ -238,21 +238,14 @@ const Mainpage = () => {
 
         <div className='Customer'>
             
-            <div id='smallbox'>
-            <div id='smallbox2'>
+            {/* <div id='smallbox'>
+            <div id='smallbox2'> */}
 
                 
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-  
-
-
-      </div>
+    
       
   );
 }
